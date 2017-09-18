@@ -1,0 +1,29 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: $color-background;
+    overflow-x: hidden;
+}
+
+.page {
+    position: relative;
+    padding-top: 56px;
+
+    @media(min-width: 600px) {
+        padding-top: 64px;
+    }
+}
+
+.paper {
+    width: 90%;
+    margin: 0 auto;
+    padding: 12px;
+    box-sizing: border-box;
+}
+.row, .row-reverse, .column, .column-reverse {
+    display: flex;
+}
+.row {flex-direction: row;}
+.column {flex-direction: column;}
+.row-reverse {flex-direction: row-reverse;}
+.column-reverse {flex-direction: column-reverse;}
